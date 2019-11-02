@@ -1,39 +1,39 @@
 ---
-title: Gatsby.js Tutorials
+title: Gatsby.js الدليل التطبيقي
 disableTableOfContents: true
 ---
 
-Welcome to Gatsby! We’re glad you’re here. The goal of this tutorial is to guide you through setting up and deploying your first Gatsby site using a starter template. As we walk through that process, we’ll introduce some more general web development topics, and go over the underlying structure of a Gatsby site.
+مرحبا بكم في Gatsby! نحن سعداء لتواجدك هنا. الهدف من هذا الدليل التطبيقي هو إرشادك من خلال إعداد و رفع موقعك الأول باستخدام قالب Gatsby الأولى. بينما نتقدم خلال هذه العملية ، سنقدم بعض مواضيع تطوير الويب العامة ، وسنراجع الهيكل الأساسي لموقع Gatsby.
 
-> The full tutorial is intended to be as accessible as possible to people without much web development experience (yet!) — no need to be an expert. If you prefer to jump straight to code, feel free to skip the step-by-step tutorial and see the [quick start](/docs/quick-start/) page.
+> يهدف الدليل التطبيقي الكامل إلى أن يكون في المتناول  قدر الإمكان للأشخاص دون الخبرة في تطوير الويب (حتى الآن!) - لا داعي لأن تكون خبيرًا. إذا كنت تفضل الانتقال مباشرة إلى الشيفرة، فلا تتردد في تخطي الدليل التطبيقي خطوة بخطوة ومشاهدة صفحة [البداية السريعة](/docs/quick-start/).
 
-## Gatsby fundamentals
+## Gatsby أساسيات
 
-0.  [Set up your development environment](/tutorial/part-zero/): We'll introduce you to core technologies that power Gatsby, and guide you through setting up your development environment.
-1.  [Get to know Gatsby building blocks](/tutorial/part-one/): Starting new projects, developing, and deploying sites.
-1.  [Introduction to using CSS in Gatsby](/tutorial/part-two/): Explore libraries like Typography.js and CSS Modules.
-1.  [Building nested layouts in Gatsby](/tutorial/part-three/): Layouts are sections of your site that are reused across multiple pages like headers and footers.
+0.  [قم بإعداد بيئة التطوير الخاصة بك](/tutorial/part-zero/): سوف نقدم لك التقنيات الأساسية التي تحتاجها في التعامل مع Gatsby ، وإرشادك من خلال إعداد بيئة التطوير الخاصة بك.
+1.  [تعرف على كتل Gatsby الأساسية](/tutorial/part-one/): بدء مشاريع جديدة وتطوير ورفع مواقع.
+2.  [مقدمة عن استخدام الـ CSS في Gatsby](/tutorial/part-two/): استكشف المكتبات مثل Typography.js و CSS Modules.
+3.  [بناء واجهات متداخلة في Gatsby](/tutorial/part-three/): تعتبر هذه الواجهات أقسام من موقعك يتم إعادة استخدامها عبر صفحات متعددة مثل الرؤوس (headers) والتذييلات (footers).
 
-## Intermediate tutorials
+## الدروس المتوسطة
 
-In these intermediate tutorials, you'll learn how to pull data from almost anywhere into your Gatsby site with GraphQL.
+في هذ القسم من الدليل التطبيقي، ستتعلم كيفية سحب البيانات من أي مكان تقريبًا إلى موقع Gatsby الخاص بك باستخدام GraphQL.
 
-4.  [Querying for data in a blog](/tutorial/part-four/): Create a blog and use a GraphQL query to pull your site title into the blog header.
-5.  [Source plugins and rendering queried data](/tutorial/part-five/): Use a source plugin to pull Markdown blog posts into your site and create an index page with a list of blog posts.
-6.  [Transformer plugins](/tutorial/part-six/): Use a transformer plugin to transform your Markdown blog posts into a form the blog can render.
-7.  [Programmatically create pages from data](/tutorial/part-seven/): Learn how to programmatically create a set of pages for your blog posts.
-8.  [Preparing a site to go live](/tutorial/part-eight/): Learn how to audit your site for performance and best practices for accessibility, SEO, and more.
+4.  [الاستعلام (Querying) عن البيانات في مدونة](/tutorial/part-four/): قم بإنشاء مدونة واستخدم استعلام GraphQL لسحب عنوان موقعك إلى رأس المدونة.
+5.  [إضافات المصدر وتصيير البيانات التي تم الاستعلام عنها](/tutorial/part-five/): استخدم إضافة مصدر لسحب Markdown منشورات مدونة إلى موقعك وإنشاء صفحة رئيسية مع قائمة منشورات المدونة.
+6.  [إضافات للمحول](/tutorial/part-six/): استخدم إضافة للمحول لتحويل منشورات مدونة (Markdown) إلى نموذج يمكن للمدونة تصييره.
+7.  [إنشاء صفحات من البيانات بطريقة برمجية](/tutorial/part-seven/): تعرف على كيفية إنشاء مجموعة من الصفحات لمنشورات مدونتك بطريقة برمجية.
+8.  [تحضير الموقع لوضع الإنتاج](/tutorial/part-eight/):  تعرف على كيفية فحص موقعك بحثًا عن الأداء وأفضل الممارسات لإمكانية الوصول، SEO، والمزيد.
 
-## Theme tutorials
+## دروس الثيم
 
-Gatsby themes abstract all of your default configuration (shared functionality, data sourcing, design) out of your site and into an installable package.
+تقوم ثيمات Gatsby باختصار جميع الإعدادت الافتراضية (الدالات المشتركة ، البحث عن مصادر البيانات ، التصميم) خارج موقعك وفي حزمة قابلة للتثبيت.
 
-This means that the configuration and functionality isn’t directly written into your project, but rather versioned, centrally managed, and installed as a dependency. You can seamlessly update a theme, compose themes together, and even swap out one compatible theme for another.
+هذا يعني أن الإعدادت والدالات لم تتم كتابتهما مباشرةً في مشروعك ، ولكنهما تداران مركزيًا وتثبتهما كتبعية (dependency). يمكنك تحديث ثيمة بسلاسة ، وإنشاء الثيمات معًا ، وحتى تبديل ثيمة متوافقة لأخرى.
 
-Learn more about using and building themes with the [Gatsby theme tutorials](/tutorial/theme-tutorials/).
+تعلم اكثر حول استخدام وبناء الثيمات باستخدام [الدليل التطبيقي لثيمات Gatsby](/tutorial/theme-tutorials/).
 
-## Additional tutorials
+## دروس إضافية
 
-There are many use cases for Gatsby, some of which aren't covered in the first set of tutorials to keep you focused while learning. Gatsby's Additional Tutorials section is a collection of resources showing how to complete even more Gatsby tasks step-by-step, such as using source plugins for images and CMS content.
+هناك العديد من حالات الاستخدام لـ Gatsby ، والتي لم يتم تغطيتها في المجموعة الأولى من الدليل التطبيقي لإبقاء تركيزك أثناء التعلم. هذا القسم في Gatsby عبارة عن مجموعة من الموارد التي توضح كيفية إكمال المزيد من مهام Gatsby خطوة بخطوة ، مثل استخدام إضافات المصدر للصور ومحتوى CMS.
 
-Go deeper with [additional Gatsby tutorials](/tutorial/additional-tutorials/).
+تعمق أكثر مع [الدليل التطبيقي الإضافي لـ Gatsby](/tutorial/additional-tutorials/).
