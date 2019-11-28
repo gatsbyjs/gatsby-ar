@@ -4,191 +4,190 @@ typora-copy-images-to: ./
 disableTableOfContents: true
 ---
 
-Before you start building your first Gatsby site, you’ll need to familiarize yourself with some core web technologies and make sure that you have installed all required software tools.
+قبل البدء في إنشاء موقع Gatsby الأول الخاص بك ، ستحتاج إلى التعرف على بعض تقنيات الويب الأساسية والتأكد من أنك قمت بتثبيت جميع أدوات البرمجيات المطلوبة.
 
-## Familiarize yourself with the command line
+## تعرف على سطر الأوامر
 
-The command line is a text-based interface used to run commands on your computer. You’ll also often see it referred to as the terminal. In this tutorial, we’ll use both interchangeably. It’s a lot like using the Finder on a Mac or Explorer on Windows. Finder and Explorer are examples of graphical user interfaces (GUI). The command line is a powerful, text-based way to interact with your computer.
+سطر الأوامر هو واجهة قائمة على النصوص تُستخدم لتشغيل الأوامر على جهاز الكمبيوتر الخاص بك. سترى أيضًا في كثير من الأحيان أنه يشار إليه باسم "الطرفية Terminal". في هذا البرنامج التعليمي ، سنستخدم كلاهما بالتبادل. انه يشبه كثيراً استخدام Finder على جهاز Mac أو Explorer على نظام التشغيل Windows. Finder و Explorer أمثلة من واجهات المستخدم الرسومية (GUI). يعد سطر الأوامر طريقة فعالة تعتمد على النص للتفاعل مع جهاز الكمبيوتر الخاص بك.
 
-Take a moment to locate and open up the command line interface (CLI) for your computer. Depending on which operating system you are using, see [**instructions for Mac**](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/), [**instructions for Windows**](https://www.quora.com/How-do-I-open-terminal-in-windows) or [**instructions for Linux**](https://www.howtogeek.com/140679/beginner-geek-how-to-start-using-the-linux-terminal/).
+نتوقف لحظة لتحديد مكان وفتح واجهة سطر الأوامر (CLI) في جهاز الكمبيوتر الخاص بك. اعتمادًا على نظام التشغيل الذي تستخدمه ، راجع [**إرشادات لنظام التشغيل Mac**](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/) أو [**تعليمات لنظام التشغيل Windows**](https://www.quora.com/How-do-I-open-terminal-in-windows) أو [**تعليمات لنظام التشغيل Linux**](https://www.howtogeek.com/140679/beginner-geek-how-to-start-using-the-linux-terminal/).
 
-## Install Homebrew for Node.js
+## تثبيت Homebrew لتثبيت Node.js
 
-To install Gatsby and Node.js, it is recommended to use [Homebrew](https://brew.sh/). A little set-up in the beginning can save you from some headaches later on!
+لتثبيت Gatsby و Node.js ، يوصى باستخدام [Homebrew](https://brew.sh/). مجموعة تنصيبات صغيرة في البداية يمكن أن تجنبك بعض الصداع في وقت لاحق!
 
-How to install or verify Homebrew on your computer:
+كيفية تثبيت أو التحقق من Homebrew على جهاز الكمبيوتر الخاص بك:
 
-1. Open your Terminal.
-1. See if Homebrew is installed by running `brew -v`. You should see "Homebrew" and a version number.
-1. If not, download and install [Homebrew with the instructions](https://docs.brew.sh/Installation) for your operating system (Mac, Linux or Windows).
-1. Once you've installed Homebrew, repeat step 2 to verify.
+1. قم بفتح "الطرفية Terminal".
+1. تاكد ما إذا تم تثبيت Homebrew عن طريق تنفيذ `brew -v`. يجب أن تشاهد "Homebrew" ورقم الإصدار.
+1. اذا لم يظهر لك, حمل ونصب [Homebrew باتباع التعليمات](https://docs.brew.sh/Installation) لنظام التشغيل الخاص بك (Mac أو Linux أو Windows).
+1. بمجرد تثبيت Homebrew ، كرر الخطوة رقم 2 للتحقق.
 
-### Mac Users: install Xcode Command Line Tools
+### مستخدمو Mac: قم بتثبيت أدوات سطر أوامر Xcode
 
-1. Open your Terminal.
-1. On a Mac, install Xcode Command line tools by running `xcode-select --install`.
-   1. If that fails, download it [directly from the Apple site](https://developer.apple.com/download/more/), after signing-in with Apple developer account
-1. After being prompted to start the installation, you'll be prompted again to accept a software license for the tools to download.
+1. قم بفتح "الطرفية Terminal".
+1. على نظام Mac ، قم بتثبيت أدوات سطر أوامر Xcode عن طريق تشغيل `xcode-select --install`.
+   1. إذا فشل ذلك ، قم بتنزيله [مباشرةً من موقع Apple](https://developer.apple.com/download/more/) ، بعد تسجيل الدخول باستخدام حساب مطور Apple
+1. بعد مطالبتك ببدء التثبيت ، ستتم مطالبتك مرة أخرى بقبول ترخيص برنامج للأدوات المراد تنزيلها.
 
-## ⌚ Install Node.js and npm
+## ⌚ تثبيت Node.js و npm
 
-Node.js is an environment that can run JavaScript code outside of a web browser. Gatsby is built with Node.js. To get up and running with Gatsby, you’ll need to have a recent version installed on your computer.
+Node.js عبارة عن بئية لتشغيل شيفرة JavaScript خارج المتصفح. Gatsby مبنية بإستخدام Node.js. لتشغيل Gatsby, ستحتاج إلى تثبيت إصدار حديث على جهاز الكمبيوتر الخاص بك.
+_ملاحظة: الاصدار الادنى المتوافق مع Gatsby هو الاصدار 8, وبالامكان إستخدام أصدارات أحدث_
 
-_Note: Gatsby's minimum supported Node.js version is Node 8, but feel free to use a more recent version._
+1. قم بفتح "الطرفية Terminal".
+1. نفذ `brew update` للتأكد من أن لديك أحدث إصدار من Homebrew.
+1. قم بتنفيذ هذا الأمر لتثبيت Node و npm دفعة واحدة: `brew install node`
 
-1. Open your Terminal.
-1. Run `brew update` to make sure you have the latest version of Homebrew.
-1. Run this command to install Node and npm in one go: `brew install node`
+بمجرد اتباع خطوات التثبيت ، تأكد من تثبيت كل شيء بشكل صحيح:
 
-Once you have followed the installation steps, make sure everything was installed properly:
+### تحقق من تثبيت Node.js الخاص بك
 
-### Check your Node.js installation
+1. قم بفتح "الطرفية Terminal".
+2. نفذ `node --version`. (اذا كنت مبتدى مع سطر الاوامر, “نفذ `الامر`” يقصد بها “إكتب `node --version` في موجه الأوامر "الطرفية Terminal", واضغط على مفتاح Enter”. من هنا ، هذا ما نعنيه “بنفذ `الامر`”).
+3. نفذ `npm --version`.
 
-1.  Open up your terminal.
-2.  Run `node --version`. (If you’re new to the command line, “run `command`” means “type `node --version` in the command prompt, and hit the Enter key”. From here on, this is what we mean by “run `command`”).
-3.  Run `npm --version`.
+مخرجات الاوامر السابقة يجيب انت تكون رقم الاصدار. قد لا تتماثل اصداراتك مع الاصدارات الظاهرة بالاسفل! واذا كان تنفيذ الاوامر السابقة لا يعرض لك رقم اصدار, عد وتاكد من من تثبيت Node.js.
 
-The output of each of those commands should be a version number. Your versions may not be the same as those shown below! If entering those commands doesn’t show you a version number, go back and make sure you have installed Node.js.
+![تحقق إصدارات العقدة و npm في "الطرفية Terminal"](01-node-npm-versions.png)
 
-![Check node and npm versions in terminal](01-node-npm-versions.png)
+## تثبيت Git
 
-## Install Git
+Git هو نظام للتحكم في الإصدار الموزع مجانًا ومفتوح المصدر مصمم للتعامل مع كل شيء بدءًا من المشاريع الصغيرة إلى المشاريع الكبيرة جدًا بسرعة وكفاءة. عندما تقوم بتثبيت موقع "عدة البدء" Gatsby ، يستخدم Gatsby نظام Git وراء الكواليس لتنزيل وتثبيت الملفات المطلوبة لعدة البدء. ستحتاج إلى تثبيت Git لإعداد أول موقع Gatsby خاصتك.
 
-Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. When you install a Gatsby "starter" site, Gatsby uses Git behind the scenes to download and install the required files for your starter. You will need to have Git installed to set up your first Gatsby site.
+تعتمد خطوات تنزيل Git وتثبيته على نظام التشغيل لديك. اتبع دليل نظامك:
 
-The steps to download and install Git depend on your operating system. Follow the guide for your system:
+- [تثبيت Git على macOS](https://www.atlassian.com/git/tutorials/install-git#mac-os-x)
+- [تثبيت Git على Windows](https://www.atlassian.com/git/tutorials/install-git#windows)
+- [تثبيت Git على Linux](https://www.atlassian.com/git/tutorials/install-git#linux)
 
-- [Install Git on macOS](https://www.atlassian.com/git/tutorials/install-git#mac-os-x)
-- [Install Git on Windows](https://www.atlassian.com/git/tutorials/install-git#windows)
-- [Install Git on Linux](https://www.atlassian.com/git/tutorials/install-git#linux)
+## إستخدام واجهة سطر الأوامر Gatsby CLI
 
-## Using the Gatsby CLI
+تتيح لك أداة Gatsby CLI إنشاء مواقع جديدة مدعومة من Gatsby وتشغيل أوامر لتطوير مواقع Gatsby. إنها حزمة npm منشورة.
 
-The Gatsby CLI tool lets you quickly create new Gatsby-powered sites and run commands for developing Gatsby sites. It is a published npm package.
+يتوفر Gatsby CLI عبر npm ويجب تثبيته بشكلٍ عام عن طريق تنفيذ `npm install -g gatsby-cli`.
 
-The Gatsby CLI is available via npm and should be installed globally by running `npm install -g gatsby-cli`.
+_**ملاحظة**: عند تثبيت Gatsby وتشغيله لأول مرة ، سترى رسالة قصيرة لإعلامك ببيانات الاستخدام مجهولة المصدر التي يتم جمعها لأوامر Gatsby ، يمكنك قراءة المزيد حول كيفية سحب تلك البيانات واستخدامها في [وثيقة القياس عن بعد](/docs/telemetry)._
 
-_**Note**: when you install Gatsby and run it for the first time, you'll see a short message notifying you about anonymous usage data that is being collected for Gatsby commands, you can read more about how that data is pulled out and used in the [telemetry doc](/docs/telemetry)._
+لمعرفة الأوامر المتاحة، نفذ `gatsby --help`.
 
-To see the commands available, run `gatsby --help`.
+![تحقق من اوامر gatsby في "الطرفية Terminal"](05-gatsby-help.png)
 
-![Check gatsby commands in terminal](05-gatsby-help.png)
+> 💡 إذا لم تتمكن من تشغيل Gatsby CLI بنجاح بسبب مشكلة في الأذونات، فقد ترغب في التحقق من [مستندات npm على إصلاح الأذونات](https://docs.npmjs.com/getting-started/fixing-npm-permissions), او [هذا الدليل](https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md).
 
-> 💡 If you are unable to successfully run the Gatsby CLI due to a permissions issue, you may want to check out the [npm docs on fixing permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions), or [this guide](https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md).
+## إنشاء موقع Gatsby
 
-## Create a Gatsby site
+أنت الآن جاهز لاستخدام أداة Gatsby CLI لإنشاء أول موقع لك Gatsby. باستخدام الأداة, يمكنك تحميل “عدة البدء” (مواقع بنيت جزئيا مع بعض المكونات الافتراضية) لمساعدتك في التحرك بشكل أسرع عند إنشاء نوع معين من الموقع. عدة البدء “Hello World” ستستخدم هنا هي عدة بدء مع عدد ضائل من المكونات اللازمة لموقع Gatsby.
 
-Now you are ready to use the Gatsby CLI tool to create your first Gatsby site. Using the tool, you can download “starters” (partially built sites with some default configuration) to help you get moving faster on creating a certain type of site. The “Hello World” starter you’ll be using here is a starter with the bare essentials needed for a Gatsby site.
-
-1.  Open up your terminal.
-2.  Run `gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world`. (_Note: Depending on your download speed, the amount of time this takes will vary. For brevity's sake, the gif below was paused during part of the install_).
-3.  Run `cd hello-world`.
-4.  Run `gatsby develop`.
+1. قم بفتح "الطرفية Terminal".
+2. نفذ `gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world`. (_ملاحظة: بناءً على سرعة التنزيل لديك ، سوف يختلف مقدار الوقت المستغرق. من أجل الإيجاز ، تم إيقاف gif أدناه أثناء جزء من التثبيت_).
+3. نفذ `cd hello-world`.
+4. نفذ `gatsby develop`.
 
 <video controls="controls" autoplay="true" loop="true">
   <source type="video/mp4" src="./03-create-site.mp4" />
-  <p>Sorry! You browser doesn't support this video.</p>
+  <p>المعذرة! متصفحك لا يدعم هذا الفيديو.</p>
 </video>
 
-What just happened?
+ماذا حدث للتو؟
 
 ```shell
 gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world
 ```
 
-- `new` is a gatsby command to create a new Gatsby project.
-- Here, `hello-world` is an arbitrary title — you could pick anything. The CLI tool will place the code for your new site in a new folder called “hello-world”.
-- Lastly, the GitHub URL specified points to a code repository that holds the starter code you want to use.
+- `new` هو أمر gatsby لإنشاء مشروع Gatsby جديد.
+- هنا, `hello-world` هو عنوان تعسفي - يمكنك اختيار أي شيء. ستضع أداة CLI الشيفرة البرمجية لموقعك الجديد في مجلد جديد يسمى “hello-world”.
+- أخيرًا ، يشير عنوان URL الخاص بـ GitHub إلى مستودع الشبفرة الذي يحتفظ بشيفرة عدة البدء الذي تريد استخدامه.
 
 ```shell
 cd hello-world
 ```
 
-- This says 'I want to change directories (`cd`) to the “hello-world” subfolder'. Whenever you want to run any commands for your site, you need to be in the context for that site (aka, your terminal needs to be pointed at the directory where your site code lives).
+- هذا يقول "أريد تغيير مسار المجلّد (`cd`) إلى المجلد الفرعي" hello-world ". كلما أردت تشغيل أي أوامر لموقعك ، يجب أن تكون في سياق هذا المسار (ويعرف أيضًا باسم المحطة الطرفية أن يتم توجيهك إلى الدليل حيث يعيش رمز موقعك).
 
 ```shell
 gatsby develop
 ```
 
-- This command starts a development server. You will be able to see and interact with your new site in a development environment — local (on your computer, not published to the internet).
+- يبدأ هذا الأمر في تشغيل خادم التطوير. ستتمكن من رؤية موقعك الجديد والتفاعل معه في بيئة تطوير - محلية (على جهاز الكمبيوتر الخاص بك ، وليس منشوراً على الإنترنت).
 
-### View your site locally
+### عرض موقعك محليا
 
-Open up a new tab in your browser and navigate to [**http://localhost:8000**](http://localhost:8000/).
+افتح علامة تبويب جديدة في متصفحك وانتقل إلى الرابط [**http://localhost:8000**](http://localhost:8000/).
 
-![Check homepage](04-home-page.png)
+![تحقق من الصفحة الرئيسية](04-home-page.png)
 
-Congrats! This is the beginning of your very first Gatsby site! 🎉
+مبروك! هذه هي بداية موقعك Gatsby الأول! 🎉
 
-You’ll be able to visit the site locally at [**_http://localhost:8000_**](http://localhost:8000/) for as long as your development server is running. That’s the process you started by running the `gatsby develop` command. To stop running that process (or to “stop running the development server”), go back to your terminal window, hold down the “control” key, and then hit “c” (ctrl-c). To start it again, run `gatsby develop` again!
+ستتمكن من زيارة الموقع محليًا على [**_http://localhost:8000_**](http://localhost:8000/) طالما أن خادم التطوير الخاص بك يعمل. هذه هي العملية التي بدأت بتنفيذ الامر `gatsby develop`. لوقف تشغيل هذه العملية (أو “للتوقف عن تشغيل خادم التطوير”), العودة إلى النافذة الطرفية الخاصة بك ، اضغط باستمرار على مفتاح “التحكم”, ثم إضغط على “c” (ctrl-c). لبدء ذلك مرة أخرى, نفذ `gatsby develop` مرة أخرى!
 
-**Note:** If you are using VM setup like `vagrant` and/or would like to listen on your local IP address, run `gatsby develop -- --host=0.0.0.0`. Now, the development server listens on both 'localhost' and your local IP.
+**ملاحظة:** إذا كنت تستخدم إعداد VM مثل `vagrant` و / أو ترغب في الاستماع على عنوان IP المحلي الخاص بك, نفذ `gatsby develop -- --host=0.0.0.0`. الآن، يستمع خادم التطوير على كل من localhost و IP المحلي الخاص بك.
 
-## Set up a code editor
+## إعداد محرر الشيفرة البرمجية
 
-A code editor is a program designed specifically for editing computer code. There are many great ones out there.
+محرر الشيفرة البرمجية هو عبارة عن برنامج صمم خصيصاً لتحرير شيفرة الكمبيوتر. هنالك العديد من .المحررات المشهورة
 
-### Download VS Code
+### تنزيل VS Code
 
-Gatsby documentation sometimes includes screenshots that were taken in VS Code, so if you don't have a preferred code editor yet, using VS Code will make sure that your screen looks just like the screenshots in the tutorial and docs. If you choose to use VS Code, visit the [VS Code site](https://code.visualstudio.com/#alt-downloads) and download the version appropriate for your platform.
+تتضمن وثائق Gatsby أحيانًا لقطات شاشة تم التقاطها في VS Code ،لذلك إذا لم يكن لديك محرر للشيفرة البرمجية مستحسن حتى الآن, فإن استخدام VS Code سوف يجعلك تتاكد من أن شاشتك تبدو تمامًا مثل لقطات الشاشة في الدليل التعليمي والمستندات. إذا اخترت استخدام VS Code ،فانتقل إلى [موقع VS Code](https://code.visualstudio.com/#alt-downloads) وقم بتنزيل الإصدار المناسب للنظام الأساسي الخاص بك.
 
-### Install the Prettier plugin
+### تثبيت الاضافة المساعدة Prettier
 
-We also recommend using [Prettier](https://github.com/prettier/prettier), a tool that helps format your code to avoid errors.
+نوصي أيضا باستخدام [Prettier](https://github.com/prettier/prettier), كونها أداة تساعد في تنسيق التعليمات البرمجية لتجنب الأخطاء.
 
-You can use Prettier directly in your editor using the [Prettier VS Code plugin](https://github.com/prettier/prettier-vscode):
+يمكنك استخدام Prettier مباشرة في محررك باستخدام [إضافة Prettier VS Code](https://github.com/prettier/prettier-vscode):
 
-1.  Open the extensions view on VS Code (View => Extensions).
-2.  Search for "Prettier - Code formatter".
-3.  Click "Install". (After installation you'll be prompted to restart VS Code to enable the extension. Newer versions of VS Code will automatically enable the extension after download.)
+1. افتح عرض الامتدادات على VS Code (View => Extensions).
+2. أبحث عن "Prettier - Code formatter".
+3. اضغط "Install". (بعد التثبيت ، سيُطلب منك إعادة تشغيل VS Code لتمكين الامتداد. الإصدارات الأحدث من كود VS Code ستمكّن الامتداد تلقائيًا بعد التنزيل.)
 
-> 💡 If you're not using VS Code, check out the Prettier docs for [install instructions](https://prettier.io/docs/en/install.html) or [other editor integrations](https://prettier.io/docs/en/editors.html).
+> 💡 إذا كنت لا تستخدم VS Code, تحقق من مستندات Prettier لمعرفة [تعليمات التثبيت](https://prettier.io/docs/en/install.html) أو [تكامل مع محررات أخرى](https://prettier.io/docs/en/editors.html).
 
-## ➡️ What’s Next?
+## ➡️ ماذا بعد؟
 
-To summarize, in this section you:
+للتلخيص, في هذا القسم أنت قد:
 
-- Learned about the command line and how to use it
-- Installed and learned about Node.js and the npm CLI tool, the version control system Git, and the Gatsby CLI tool
-- Generated a new Gatsby site using the Gatsby CLI tool
-- Ran the Gatsby development server and visited your site locally
-- Downloaded a code editor
-- Installed a code formatter called Prettier
+- تعلمت عن سطر الأوامر وكيفية استخدامها
+- تثبيت ومعرفة Node.js وأداة npm CLI ونظام التحكم في الإصدار Git وأداة Gatsby CLI
+- إنشاء موقع Gatsby جديد باستخدام أداة Gatsby CLI
+- تشغيل سيرفر تطوير Gatsby ومشاهدة موقع محلياً
+- تنزيل محرر الشيفرة البرمجية
+- تثبيت منسق الشيفرة البرمجية المسمى Prettier
 
-Now, move on to [**getting to know Gatsby building blocks**](/tutorial/part-one/).
+الان, إنتقل الى [**التعرف على لبنات Gatsby**](/tutorial/part-one/).
 
-## References
+## المصادر
 
-### Overview of core technologies
+### نظرة عامة على التقنيات الأساسية
 
-It’s not necessary to be an expert with these already — if you’re not, don’t worry! You’ll pick up a lot through the course of this tutorial series. These are some of the main web technologies you’ll use when building a Gatsby site:
+ليس من الضروري أن تكون خبيرًا بالفعل مع هؤلاء - إذا لم تكن كذلك ، فلا تقلق! ستحصل على الكثير من خلال هذه السلسلة التعليمية. هذه بعض تقنيات الويب الرئيسية التي ستستخدمها عند إنشاء موقع Gatsby:
 
-- **HTML**: A markup language that every web browser is able to understand. It stands for HyperText Markup Language. HTML gives your web content a universal informational structure, defining things like headings, paragraphs, and more.
-- **CSS**: A presentational language used to style the appearance of your web content (fonts, colors, layout, etc). It stands for Cascading Style Sheets.
-- **JavaScript**: A programming language that helps us make the web dynamic and interactive.
-- **React**: A code library (built with JavaScript) for building user interfaces. It’s the framework that Gatsby uses to build pages and structure content.
-- **GraphQL**: A query language that allows you to pull data into your website. It’s the interface that Gatsby uses for managing site data.
+- **HTML**: لغة ترميز يستطيع كل متصفح ويب فهمها. وهي إختصار للجملة "HyperText Markup Language لغة ترميز النصوص التشعبية". توفر HTML لمحتوى الويب الخاص بك بنية إعلامية عالمية ، تحدد أشياء مثل العناوين والفقرات والمزيد.
+- **CSS**: لغة عرض تقديمي تُستخدم في تصميم مظهر محتوى الويب الخاص بك (الخطوط والألوان والتخطيط وما إلى ذلك). وهي إختصار للجملة "Cascading Style Sheets اوراق النمط المتعاقب".
+- **JavaScript**: لغة برمجة تساعدنا على جعل الويب ديناميكيًا وتفاعليًا.
+- **React**: مكتبة برمجية (بنيت مع JavaScript) لبناء واجهات المستخدم. إنه إطار العمل الذي يستخدمه Gatsby لإنشاء صفحات وبنية المحتوى.
+- **GraphQL**: لغة استعلام تتيح لك سحب البيانات إلى موقع الويب الخاص بك. إنها الواجهة التي يستخدمها Gatsby لإدارة بيانات الموقع.
 
-### What is a website?
+### ما هو موقع الويب؟
 
-For a comprehensive introduction to what a website is--including an intro to HTML and CSS--check out “[**Building your first web page**](https://learn.shayhowe.com/html-css/building-your-first-web-page/)”. It’s a great place to start learning about the web. For a more hands-on introduction to [**HTML**](https://www.codecademy.com/learn/learn-html), [**CSS**](https://www.codecademy.com/learn/learn-css), and [**JavaScript**](https://www.codecademy.com/learn/introduction-to-javascript), check out the tutorials from Codecademy. [**React**](https://reactjs.org/tutorial/tutorial.html) and [**GraphQL**](http://graphql.org/graphql-js/) also have their own introductory tutorials.
+للحصول على مقدمة شاملة حول ماهية موقع الويب - بما في ذلك مقدمة إلى HTML و CSS - راجع “[**بناء أول صفحة الويب الخاصة بك**](https://learn.shayhowe.com/html-css/building-your-first-web-page/)”. إنه مكان رائع لبدء التعلم عن الويب. لمزيد من التدريب العملي على مقدمة [**HTML**](https://www.codecademy.com/learn/learn-html), و[**CSS**](https://www.codecademy.com/learn/learn-css), و[**JavaScript**](https://www.codecademy.com/learn/introduction-to-javascript), تحقق من الدروس من Codecademy. [**React**](https://reactjs.org/tutorial/tutorial.html) و [**GraphQL**](http://graphql.org/graphql-js/) لديها أيضا دروس تمهيدية خاصة بهم.
 
-### Learn more about the command line
+### تعرف على المزيد حول سطر الأوامر
 
-For a great introduction to using the command line, check out [**Codecademy’s Command Line tutorial**](https://www.codecademy.com/courses/learn-the-command-line/lessons/navigation/exercises/your-first-command) for Mac and Linux users, and [**this tutorial**](https://www.computerhope.com/issues/chusedos.htm) for Windows users. Even if you are a Windows user, the first page of the Codecademy tutorial is a valuable read. It explains what the command line is, not just how to interface with it.
+للحصول على مقدمة رائعة لاستخدام سطر الأوامر ، راجع [**دليل سطر الاوامر من Codecademy**](https://www.codecademy.com/courses/learn-the-command-line/lessons/navigation/exercises/your-first-command) لمستخدمي Mac و Linux, و [**هذا الدليل التعليمي**](https://www.computerhope.com/issues/chusedos.htm) لمستخدمي ويندوز. حتى لو كنت أحد مستخدمي Windows ، فإن الصفحة الأولى من الدليل التعليمي لـ Codecademy هي قراءة قيمة. يشرح ما هو سطر الأوامر ، وليس فقط كيفية التعامل معه.
 
-### Learn more about npm
+### تعلم المزيد عن npm
 
-npm is a JavaScript package manager. A package is a module of code that you can choose to include in your projects. If you just downloaded and installed Node.js, npm was installed with it!
+npm هو مدير حزمة JavaScript. الحزمة عبارة عن وحدة نمطية من التعليمات البرمجية التي يمكنك اختيار تضمينها في مشاريعك. إذا قمت بتنزيل وتثبيت Node.js ، تم تثبيت npm به!
 
-npm has three distinct components: the npm website, the npm registry, and the npm command line interface (CLI).
+يحتوي npm على ثلاثة مكونات متميزة: موقع npm ، وسجل npm ، وواجهة سطر أوامر npm (CLI).
 
-- On the npm website, you can browse what JavaScript packages are available in the npm registry.
-- The npm registry is a large database of information about JavaScript packages available on npm.
-- Once you’ve identified a package you want, you can use the npm CLI to install it in your project or globally (like other CLI tools). The npm CLI is what talks to the registry — you generally only interact with the npm website or the npm CLI.
+- على موقع npm على الويب ، يمكنك استعراض حزم JavaScript المتاحة في سجل npm.
+- سجل npm عبارة عن قاعدة بيانات كبيرة تحتوي على معلومات حول حزم JavaScript المتاحة على npm.
+- بمجرد تحديد الحزمة التي تريدها ، يمكنك استخدام npm CLI لتثبيته في مشروعك أو بشكلٍ عام (مثل أدوات CLI الأخرى). npm CLI هو ما يتحدث إلى السجل - أنت تتفاعل بشكل عام فقط مع موقع npm أو npm CLI.
 
-> 💡 Check out npm’s introduction, “[**What is npm?**](https://docs.npmjs.com/getting-started/what-is-npm)”.
+> 💡 تحقق من مقدمة npm ، "[**ما هو npm؟**](https://docs.npmjs.com/getting-started/what-is-npm)”.
 
-### Learn more about Git
+### معرفة المزيد عن Git
 
-You will not need to know Git to complete this tutorial, but it is a very useful tool. If you are interested in learning more about version control, Git, and GitHub, check out GitHub's [Git Handbook](https://guides.github.com/introduction/git-handbook/).
+لن تحتاج إلى معرفة Git لإكمال هذا البرنامج التعليمي ، لكنه أداة مفيدة للغاية. إذا كنت مهتمًا بمعرفة المزيد حول التحكم في الإصدار ، Git و GitHub ، تحقق من دليل GitHub [Git Handbook](https://guides.github.com/introduction/git-handbook/).
