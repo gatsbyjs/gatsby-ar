@@ -103,7 +103,7 @@ touch gatsby-browser.js
 ├── gatsby-browser.js
 ```
 
-> 💡 ما هو 'gatsby-browser.js`؟ لا تقلق بشأن هذا كثيرًا ، والآن ، تعرف فقط أن "gatsby-browser.js" هو واحد من مجموعة من الملفات الخاصة التي يبحث عنها Gatsby ويستخدمها (إذا كانت موجودة). هنا ، تسمية الملف ** مهمة **. إذا كنت تريد استكشاف المزيد الآن ، فتحقق من [المرجع ](/docs/browser-apis/).
+> 💡 ما هو 'gatsby-browser.js`؟ لا تقلق بشأن هذا كثيرًا ، والآن ، تعرف فقط أن "gatsby-browser.js" هو واحد من مجموعة من الملفات الخاصة التي يبحث عنها Gatsby ويستخدمها (إذا كانت موجودة). هنا ، تسمية الملف **مهمة**. إذا كنت تريد استكشاف المزيد الآن ، فتحقق من [المرجع](/docs/browser-apis/).
 
 2. استيراد ورقة أنماط تم إنشاؤها مؤخرًا في ملف `gatsby-browser.js`:
 
@@ -134,10 +134,10 @@ gatsby develop
 
 ### CSS Modules
 
-دعنا نستكشف ** وحدات CSS **. نقلا عن
+دعنا نستكشف **وحدات CSS**. نقلا عن
 [الصفحة الرئيسية لوحدة CSS](https://github.com/css-modules/css-modules):
 
-> ** CSS Module ** هو ملف CSS فيه جميع أسماء الفئات وأسماء الرسوم المتحركة
+> **CSS Module** هو ملف CSS فيه جميع أسماء الفئات وأسماء الرسوم المتحركة
 > يتم تحديد النطاق محليًا بشكل افتراضي.
 
 وحدات CSS شائعة جدًا لأنها تتيح لك كتابة CSS بشكل طبيعي ولكن مع قدر أكبر من الأمان. تقوم الأداة تلقائيًا بإنشاء أسماء فصول ورسوم متحركة فريدة ، لذا لا داعي للقلق بشأن تضارب أسماء المحدد.
@@ -183,8 +183,8 @@ import Container from "../components/container";
 
 export default () => (
   <Container>
-    <h1>About CSS Modules</h1>
-    <p>CSS Modules are cool</p>
+    <h1>حول وحدات CSS</h1>
+    <p>وحدات CSS هي رائعة</p>
   </Container>
 );
 ```
@@ -193,13 +193,13 @@ export default () => (
 
 ![صفحات مع أنماط وحدات CSS](css-modules-basic.png)
 
-#### ✋ Style a component using CSS Modules
+#### ✋ نمط مكّون باستخدام وحدات CSS
 
-In this section, you'll create a list of people with names, avatars, and short Latin biographies. You'll create a `<User />` component and style that component using a CSS module.
+في هذا القسم ، ستنشئ قائمة بالأشخاص الذين لديهم أسماء ، وأفاتار ، وسير ذاتية لاتينية قصيرة. ستقوم بإنشاء مكون `<User />` ونمط ذلك المكون باستخدام وحدة CSS.
 
-1. Create the file for the CSS at `src/pages/about-css-modules.module.css`.
+1. قم بإنشاء ملف CSS في `src/pages/about-css-modules.module.css`.
 
-2. Paste the following into the new file:
+2. الصق ما يلي في الملف الجديد:
 
 ```css:title=src/pages/about-css-modules.module.css
 .user {
@@ -235,35 +235,35 @@ In this section, you'll create a list of people with names, avatars, and short L
 }
 ```
 
-3. Import the new `src/pages/about-css-modules.module.css` file into the `about-css-modules.js` page you created earlier by editing the first few lines of the file like so:
+3. استيراد الجديد `src/pages/about-css-modules.module.css` ملف في صفحة `about-css-modules.js` التي قمت بإنشائها سابقًا من خلال تحرير الأسطر القليلة الأولى من الملف مثل:
 
 ```javascript:title=src/pages/about-css-modules.js
-import React from "react"
+import React from "react";
 // highlight-next-line
-import styles from "./about-css-modules.module.css"
-import Container from "../components/container"
+import styles from "./about-css-modules.module.css";
+import Container from "../components/container";
 
 // highlight-next-line
-console.log(styles)
+console.log(styles);
 ```
 
-The `console.log(styles)` code will log the resulting import so you can see the result of your processed `./about-css-modules.module.css` file. If you open the developer console (using e.g. Firefox or Chrome's developer tools) in your browser, you'll see:
+ستقوم شفرة `console.log(styles)` بتسجيل الاستيراد الناتج حتى تتمكن من رؤية نتيجة ملفك المعالج`./about-css-modules.module.css` إذا قمت بفتح وحدة تحكم مطوّر البرامج (باستخدام أدوات مطوري Firefox أو Chrome) في متصفحك ، فسترى:
 
-![Import result of CSS module in console](css-modules-console.png)
+![استيراد نتيجة وحدة CSS في وحدة التحكم](css-modules-console.png)
 
-If you compare that to your CSS file, you'll see that each class is now a key in the imported object pointing to a long string e.g. `avatar` points to `src-pages----about-css-modules-module---avatar---2lRF7`. These are the class names CSS Modules generates. They're guaranteed to be unique across your site. And because you have to import them to use the classes, there's never any question about where some CSS is being used.
+إذا قارنت ذلك بملف CSS الخاص بك ، فسترى أن كل فصل دراسي أصبح الآن مفتاحًا في الكائن المستورد يشير إلى سلسلة طويلة على سبيل المثال `avatar` تشير إلى صفحات src---- about-css-modules-module---avatar---2lRF7`. هذه هي أسماء الفئات التي تنشئها وحدات CSS. أنها مضمونة لتكون فريدة من نوعها عبر موقعك. ولأنه يتعين عليك استيرادها لاستخدام الفصول الدراسية ، فلا يوجد أي سؤال حول مكان استخدام بعض CSS.
 
-4. Create a `User` component.
+4. قم بإنشاء مكون `User`.
 
-Create a new `<User />` component inline in the `about-css-modules.js` page
-component. Modify `about-css-modules.js` so it looks like the following:
+قم بإنشاء مكون جديد `<User />` مضمن في صفحة`about-css-modules.js`
+مكون. تعديل `about-css-modules.js` بحيث يبدو كما يلي:
 
 ```jsx:title=src/pages/about-css-modules.js
-import React from "react"
-import styles from "./about-css-modules.module.css"
-import Container from "../components/container"
+import React from "react";
+import styles from "./about-css-modules.module.css";
+import Container from "../components/container";
 
-console.log(styles)
+console.log(styles);
 
 // highlight-start
 const User = props => (
@@ -274,13 +274,13 @@ const User = props => (
       <p className={styles.excerpt}>{props.excerpt}</p>
     </div>
   </div>
-)
+);
 // highlight-end
 
 export default () => (
   <Container>
-    <h1>About CSS Modules</h1>
-    <p>CSS Modules are cool</p>
+    <h1>حول وحدات CSS</h1>
+    <p>وحدات CSS هي رائعة</p>
     {/* highlight-start */}
     <User
       username="Jane Doe"
@@ -294,30 +294,30 @@ export default () => (
     />
     {/* highlight-end */}
   </Container>
-)
+);
 ```
 
-> Tip: Generally, if you use a component in multiple places on a site, it should be in its own module file in the `components` directory. But, if it's used only in one file, create it inline.
+> نصيحة: بشكل عام ، إذا كنت تستخدم مكونًا في أماكن متعددة على أحد المواقع ، فيجب أن يكون في ملف الوحدة النمطية الخاص به في دليل `modules`. ولكن ، إذا تم استخدامه في ملف واحد فقط ، فقم بإنشائه عبر الإنترنت.
 
-The finished page should now look like:
+يجب أن تبدو الصفحة النهائية الآن كما يلي:
 
-![User list page with CSS modules](css-modules-userlist.png)
+![صفحة قائمة المستخدمين مع وحدات CSS](css-modules-userlist.png)
 
 ### CSS-in-JS
 
-CSS-in-JS is a component-oriented styling approach. Most generally, it is a pattern where [CSS is composed inline using JavaScript](https://reactjs.org/docs/faq-styling.html#what-is-css-in-js).
+CSS-in-JS هو أسلوب تصميم موجه للمكونات. بشكل عام ، هو نمط حيث [يتكون CSS بشكل مضمن باستخدام JavaScript](https://reactjs.org/docs/faq-styling.html#what-is-css-in-js).
 
-#### Using CSS-in-JS with Gatsby
+#### باستخدام CSS-in-JS مع Gatsby
 
-There are many different CSS-in-JS libraries and many of them have Gatsby plugins already. We won't cover an example of CSS-in-JS in this initial tutorial, but we encourage you to [explore](/docs/styling/) what the ecosystem has to offer. There are mini-tutorials for two libraries, in particular, [Emotion](/docs/emotion/) and [Styled Components](/docs/styled-components/).
+هناك العديد من مكتبات CSS-in-JS المختلفة والعديد منها يحتوي على ملحقات Gatsby بالفعل. لن نغطي مثالًا على CSS-in-JS في هذا البرنامج التعليمي الأولي ، لكننا نشجعك على [استكشاف](/docs/styling/) ما يمكن أن يقدمه النظام البيئي. هناك دروس تعليمية مصغرة لمكتبتين ، على وجه الخصوص ، [العاطفة](/docs/emotion/) و [نصب مكونات](/docs/styled-components/).
 
-#### Suggested reading on CSS-in-JS
+#### اقترح القراءة على CSS-in-JS
 
-If you're interested in further reading, check out [Christopher "vjeux" Chedeau's 2014 presentation that sparked this movement](https://speakerdeck.com/vjeux/react-css-in-js) as well as [Mark Dalgleish's more recent post "A Unified Styling Language"](https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660).
+إذا كنت مهتمًا بمزيد من القراءة ، تحقق من [Christopher "vjeux" عرض Chedeau 2014 الذي أثار هذه الحركة](https://speakerdeck.com/vjeux/react-css-in-js) وكذلك [Mark Dalgleish's more آخر منشور "لغة تصميم موحدة"](https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660).
 
-### Other CSS options
+### خيارات CSS الأخرى
 
-Gatsby supports almost every possible styling option (if there isn't a plugin yet for your favorite CSS option, [please contribute one!](/contributing/how-to-contribute/))
+يدعم Gatsby جميع خيارات التصميم الممكنة تقريبًا (إذا لم يكن هناك مكون إضافي حتى الآن لخيار CSS المفضل لديك ، [الرجاء المساهمة بواحد!](/contributing/how-to-contribute/))
 
 - [Typography.js](/packages/gatsby-plugin-typography/)
 - [Sass](/packages/gatsby-plugin-sass/)
@@ -325,8 +325,8 @@ Gatsby supports almost every possible styling option (if there isn't a plugin ye
 - [Stylus](/packages/gatsby-plugin-stylus/)
 - [PostCSS](/packages/gatsby-plugin-postcss/)
 
-and more!
+و اكثر!
 
-## What's coming next?
+## ما الذي سيأتي بعد ذلك؟
 
-Now continue on to [part three of the tutorial](/tutorial/part-three/), where you'll learn about Gatsby plugins and layout components.
+انتقل الآن إلى [الجزء الثالث من البرنامج التعليمي](/tutorial/part-three/) ، حيث ستتعرف على مكونات Gatsby الإضافية ومكونات التخطيط.
