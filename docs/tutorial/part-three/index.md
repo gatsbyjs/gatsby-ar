@@ -35,7 +35,7 @@ disableTableOfContents: true
 As we mentioned in [part two](/tutorial/part-two/), at this point it's probably a good idea to close the terminal window(s) and project files from previous parts of the tutorial, to keep things clean on your desktop. Then open a new terminal window and run the following commands to create a new Gatsby site in a directory called `tutorial-part-three` and then move to this new directory:
 
 ```shell
-غاتسبي تعليمي جديد ، الجزء الثالث https://github.com/gatsbyjs/gatsby-starter-hello-world
+gatsby new tutorial-part-three https://github.com/gatsbyjs/gatsby-starter-hello-world
 مؤتمر نزع السلاح تعليمي الجزء الثالث
 ```
 
