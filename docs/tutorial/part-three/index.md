@@ -1,57 +1,57 @@
 ---
-title: Creating Nested Layout Components
+title: إنشاء مكونات تخطيط متداخل
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
 
-Welcome to part three!
+مرحبا بكم في الجزء الثالث!!
 
 ## What's in this tutorial?
 
-In this part, you'll learn about Gatsby plugins and creating "layout" components.
+في هذا الجزء ، ستتعرف على المكونات الإضافية لـ Gatsby وإنشاء مكونات "layout".
 
-Gatsby plugins are JavaScript packages that help add functionality to a Gatsby site. Gatsby is designed to be extensible, which means plugins are able to extend and modify just about everything Gatsby does.
+ملحقات Gatsby هي حزم JavaScript تساعد على إضافة وظائف إلى موقع Gatsby. تم تصميم Gatsby ليكون قابلاً للتوسعة ، مما يعني أن الإضافات قادرة على تمديد وتعديل كل ما يفعله Gatsby.
 
-Layout components are for sections of your site that you want to share across multiple pages. For example, sites will commonly have a layout component with a shared header and footer. Other common things to add to layouts are a sidebar and/or navigation menu. On this page for example, the header at the top is part of gatsbyjs.org's layout component.
 
-Let's dive into part three.
+مكونات النسق مخصصة لأقسام موقعك التي ترغب في مشاركتها عبر عدة صفحات. على سبيل المثال ، سيكون للمواقع عادةً مكون تخطيط برأس وتذييل مشترك. الأشياء الشائعة الأخرى المراد إضافتها إلى التخطيطات هي شريط جانبي و / أو قائمة تنقل. في هذه الصفحة على سبيل المثال ، يمثل الرأس في الجزء العلوي جزءًا من مكون تخطيط gatsbyjs.org.
 
-## Using plugins
+دعونا الغوص في الجزء الثالث.
 
-You’re probably familiar with the idea of plugins. Many software systems support adding custom plugins to add new functionality or even modify the core workings of the software. Gatsby plugins work the same way.
+## باستخدام الإضافات
 
-Community members (like you!) can contribute plugins (small amounts of JavaScript code) that others can then use when building Gatsby sites.
+ربما تكون على دراية بفكرة المكونات الإضافية. تدعم العديد من أنظمة البرامج إضافة مكونات إضافية مخصصة لإضافة وظائف جديدة أو حتى تعديل الأعمال الأساسية للبرنامج. الإضافات Gatsby تعمل بنفس الطريقة.
 
-> There are already hundreds of plugins! Explore the Gatsby [Plugin Library](/plugins/).
+يمكن لأعضاء المجتمع (مثلك!) المساهمة في المكونات الإضافية (كميات صغيرة من شفرة JavaScript) التي يمكن للآخرين استخدامها عند إنشاء مواقع Gatsby.
 
-Our goal with plugins is to make them straightforward to install and use. You will likely be using plugins in almost every Gatsby site you build. While working through the rest of the tutorial you’ll have many opportunities to practice installing and using plugins.
+> هناك بالفعل المئات من الإضافات! استكشف Gatsby [Plugin Library](/plugins/).
 
-For an initial introduction to using plugins, we'll install and implement the Gatsby plugin for Typography.js.
+هدفنا مع المكونات الإضافية هو جعلها سهلة التركيب والاستخدام. من المحتمل أنك تستخدم المكونات الإضافية في كل موقع Gatsby تقريبًا تقوم بإنشائه. أثناء العمل خلال بقية البرنامج التعليمي ، ستتاح لك العديد من الفرص للتدرب على تثبيت المكونات الإضافية واستخدامها.
 
-[Typography.js](https://kyleamathews.github.io/typography.js/) is a JavaScript library which generates global base styles for your site's typography. The library has a [corresponding Gatsby plugin](/packages/gatsby-plugin-typography/) to streamline using it in a Gatsby site.
+للحصول على مقدمة أولية لاستخدام المكونات الإضافية ، سنقوم بتثبيت وتطبيق Gatsby plugin لـ Typography.js.
 
+[Typography.js] (https://kyleamathews.github.io/typography.js/) هي مكتبة JavaScript تنشئ أنماطًا أساسية عالمية لطباعة موقعك. تحتوي المكتبة على [ملحق Gatsby المقابل] (/package/gatsby-plugin-typography/) لتبسيط استخدامه في موقع Gatsby.
 ### ✋ Create a new Gatsby site
 
 As we mentioned in [part two](/tutorial/part-two/), at this point it's probably a good idea to close the terminal window(s) and project files from previous parts of the tutorial, to keep things clean on your desktop. Then open a new terminal window and run the following commands to create a new Gatsby site in a directory called `tutorial-part-three` and then move to this new directory:
 
 ```shell
-gatsby new tutorial-part-three https://github.com/gatsbyjs/gatsby-starter-hello-world
-cd tutorial-part-three
+غاتسبي تعليمي جديد ، الجزء الثالث https://github.com/gatsbyjs/gatsby-starter-hello-world
+مؤتمر نزع السلاح تعليمي الجزء الثالث
 ```
 
-### ✋ Install and configure `gatsby-plugin-typography`
+### ✋ تثبيت وتكوين `gatsby-plugin-typography`
 
-There are two main steps to using a plugin: Installing and configuring.
+هناك خطوتان أساسيتان لاستخدام مكون إضافي: التثبيت والتكوين.
 
-1. Install the `gatsby-plugin-typography` NPM package.
+1. تحميل هذا `gatsby-plugin-typography` NPM package.
 
 ```shell
 npm install --save gatsby-plugin-typography react-typography typography typography-theme-fairy-gates
 ```
 
-> Note: Typography.js requires a few additional packages, so those are included in the instructions. Additional requirements like this will be listed in the "install" instructions of each plugin.
+> ملاحظة: يتطلب Typography.js بعض الحزم الإضافية ، بحيث يتم تضمينها في الإرشادات. سيتم إدراج متطلبات إضافية مثل هذا في تعليمات "التثبيت" لكل مكون إضافي.
 
-2. Edit the file `gatsby-config.js` at the root of your project to the following:
+2. قم بتحرير الملف `gatsby-config.js` في جذر مشروعك إلى ما يلي:
 
 ```javascript:title=gatsby-config.js
 module.exports = {
@@ -66,11 +66,11 @@ module.exports = {
 }
 ```
 
-The `gatsby-config.js` is another special file that Gatsby will automatically recognize. This is where you add plugins and other site configuration.
+يعد "gatsby-config.js" ملفًا خاصًا آخر يتعرف عليه Gatsby تلقائيًا. هذا هو المكان الذي تضيف فيه المكونات الإضافية وتهيئة الموقع الأخرى.
 
-> Check out the [doc on gatsby-config.js](/docs/gatsby-config/) to read more, if you wish.
+> تحقق من [doc on gatsby-config.js] (/docs/gatsby-config/) لقراءة المزيد ، إذا كنت ترغب في ذلك.
 
-3. Typography.js needs a configuration file. Create a new directory called `utils` in the `src` directory. Then add a new file called `typography.js` to `utils` and copy the following into the file:
+3. Typography.js يحتاج إلى ملف التكوين. قم بإنشاء دليل جديد يسمى `utils` في دليل` src`. ثم قم بإضافة ملف جديد يسمى `typography.js` إلى` utils` وانسخ ما يلي إلى الملف:
 
 ```javascript:title=src/utils/typography.js
 import Typography from "typography"
