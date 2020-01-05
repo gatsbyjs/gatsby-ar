@@ -36,7 +36,7 @@ As we mentioned in [part two](/tutorial/part-two/), at this point it's probably 
 
 ```shell
 gatsby new tutorial-part-three https://github.com/gatsbyjs/gatsby-starter-hello-world
-مؤتمر نزع السلاح تعليمي الجزء الثالث
+cd tutorial-part-three
 ```
 
 ### ✋ تثبيت وتكوين `gatsby-plugin-typography`
