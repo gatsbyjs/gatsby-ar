@@ -87,9 +87,8 @@ export default typography
 ```shell
 gatsby develop
 ```
-
-Once you load the site, if you inspect the generated HTML using the Chrome developer tools, you’ll see that the typography plugin added a `<style>` element to the `<head>` element with its generated CSS:
-
+بمجرد تحميل الموقع ، إذا قمت بفحص HTML الذي تم إنشاؤه باستخدام أدوات مطور Chrome ، فسترى أن المكوّن الإضافي الخاص بالطباعة قد أضاف عنصر <style> إلى العنصر <head> مع CSS الذي تم إنشاؤه:
+  
 ![typography-styles](typography-styles.png)
 
 ### ✋ قم بإجراء بعض التغييرات في المحتوى والأسلوب
