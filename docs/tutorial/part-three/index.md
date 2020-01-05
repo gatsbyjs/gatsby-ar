@@ -29,7 +29,7 @@ disableTableOfContents: true
 
 للحصول على مقدمة أولية لاستخدام المكونات الإضافية ، سنقوم بتثبيت وتطبيق Gatsby plugin لـ Typography.js.
 
-[Typography.js] (https://kyleamathews.github.io/typography.js/) هي مكتبة JavaScript تنشئ أنماطًا أساسية عالمية لطباعة موقعك. تحتوي المكتبة على [ملحق Gatsby المقابل] (/package/gatsby-plugin-typography/) لتبسيط استخدامه في موقع Gatsby.
+[Typography.js] (https://kyleamathews.github.io/typography.js/) هي مكتبة JavaScript تنشئ تناسيق أساسية عالمية لطباعة موقعك. تحتوي المكتبة على [ملحق Gatsby المقابل] (/package/gatsby-plugin-typography/) لتبسيط استخدامه في موقع Gatsby.
 ### ✋ إنشاء موقع Gatsby جديد
 
 As we mentioned in [part two](/tutorial/part-two/), at this point it's probably a good idea to close the terminal window(s) and project files from previous parts of the tutorial, to keep things clean on your desktop. Then open a new terminal window and run the following commands to create a new Gatsby site in a directory called `tutorial-part-three` and then move to this new directory:
