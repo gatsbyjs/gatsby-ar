@@ -70,7 +70,7 @@ module.exports = {
 
 > تحقق من [doc on gatsby-config.js] (/docs/gatsby-config/) لقراءة المزيد ، إذا كنت ترغب في ذلك.
 
-3. Typography.js يحتاج إلى ملف التكوين. قم بإنشاء دليل جديد يسمى `utils` في دليل` src`. ثم قم بإضافة ملف جديد يسمى `typography.js` إلى` utils` وانسخ ما يلي إلى الملف:
+3. Typography.js يحتاج إلى ملف التكوين. قم بإنشاء مجلد جديد يسمى `utils` في دليل` src`. ثم قم بإضافة ملف جديد يسمى `typography.js` إلى` utils` وانسخ ما يلي إلى الملف:
 
 ```javascript:title=src/utils/typography.js
 import Typography from "typography"
