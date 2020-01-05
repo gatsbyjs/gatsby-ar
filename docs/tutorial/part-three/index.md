@@ -176,7 +176,7 @@ export default () => (
 
 ### ✋ قم بإنشاء مكون التصميم الأول الخاص بك
 
-1. إنشاء دليل جديد في `src/components`.
+1. إنشاء مجلد جديد في `src/components`.
 
 2. قم بإنشاء مكون تخطيط أساسي جدًا على `src/components/layout.js`:
 
