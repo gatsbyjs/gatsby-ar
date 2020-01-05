@@ -219,7 +219,7 @@ export default () => (
 
 ### ✋ إضافة عنوان الموقع
 
-1. أضف السطر التالي إلى مكون التصميم الجديد الخاص بك:
+1. أضف السطر التالي إلى مكون التخطيط الجديد الخاص بك:
 
 ```jsx:title=src/components/layout.js
 import React from "react"
