@@ -43,7 +43,7 @@ cd tutorial-part-three
 
 هناك خطوتان أساسيتان لاستخدام مكون إضافي: التثبيت والتكوين.
 
-1. تحميل هذا `gatsby-plugin-typography` NPM package.
+1. تحميل `gatsby-plugin-typography`  حزمة NPM.
 
 ```shell
 npm install --save gatsby-plugin-typography react-typography typography typography-theme-fairy-gates
