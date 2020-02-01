@@ -1,11 +1,10 @@
 ---
-title: Data in Gatsby
+title: البيانات في Gatsby
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
 
-Welcome to Part Four of the tutorial! Halfway through! Hope things are starting
-to feel pretty comfortable 😀
+مرحبًا بك في الجزء الرابع من البرنامج التعليمي! خلال منتصف الطريق! نأمل أن الأمور بدأت تشعر بالراحة جدا😀
 
 ## Recap of the first half of the tutorial
 
