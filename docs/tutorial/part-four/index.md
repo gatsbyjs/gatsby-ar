@@ -6,7 +6,7 @@ disableTableOfContents: true
 
 مرحبًا بك في الجزء الرابع من البرنامج التعليمي! خلال منتصف الطريق! نأمل أن الأمور بدأت تشعر بالراحة جدا😀
 
-## Recap of the first half of the tutorial
+## خلاصة النصف الأول من البرنامج التعليمي
 
 So far, you've been learning how to use React.js—how powerful it is to be able to
 create your _own_ components to act as custom building blocks for websites.
