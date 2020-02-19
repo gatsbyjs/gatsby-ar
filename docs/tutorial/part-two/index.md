@@ -105,7 +105,11 @@ import "./src/styles/global.css";
 // require('./src/styles/global.css')
 ```
 
+<<<<<<< HEAD
 > ملاحظة: يعمل بناء جملة CommonJS (`requ`) و ES Module (`import`) هنا. إذا لم تكن متأكدًا من الخيار ، فسنستخدم "استيراد" معظم الوقت.
+=======
+> Note: Both CommonJS (`require`) and ES Module (`import`) syntax work here. If you’re not sure which to choose, `import` is usually a good default. When working with files that are only run in a Node.js environment however (like `gatsby-node.js`), `require` will need to be used.
+>>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
 
 3. ابدأ خادوم التطوير:
 
@@ -143,9 +147,15 @@ Gatsby يعمل خارج المألوف مع CSS Modules. ينصح بشدة هذ
 
 1. قم بإنشاء دليل جديد على `src/components` ثم ، في هذا الدليل الجديد ، قم بإنشاء ملف باسم`container.js` ولصق ما يلي:
 
+<<<<<<< HEAD
 ```javascript:title=src/components/container.js
 import React from "react";
 import containerStyles from "./container.module.css";
+=======
+```jsx:title=src/components/container.js
+import React from "react"
+import containerStyles from "./container.module.css"
+>>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
 
 export default ({ children }) => (
   <div className={containerStyles.container}>{children}</div>
@@ -167,8 +177,13 @@ export default ({ children }) => (
 
 3. قم بإنشاء مكون صفحة جديد عن طريق إنشاء ملف في `src/pages/about-css-module.js`:
 
+<<<<<<< HEAD
 ```javascript:title=src/pages/about-css-modules.js
 import React from "react";
+=======
+```jsx:title=src/pages/about-css-modules.js
+import React from "react"
+>>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
 
 import Container from "../components/container";
 
@@ -238,16 +253,25 @@ import Container from "../components/container";
 console.log(styles);
 ```
 
+<<<<<<< HEAD
 ستقوم شفرة `console.log(styles)` بتسجيل الاستيراد الناتج حتى تتمكن من رؤية نتيجة ملفك المعالج`./about-css-modules.module.css` إذا قمت بفتح وحدة تحكم مطوّر البرامج (باستخدام أدوات مطوري Firefox أو Chrome) في متصفحك ، فسترى:
+=======
+The `console.log(styles)` code will log the resulting import so you can see the result of your processed `./about-css-modules.module.css` file. If you open the developer console (using e.g. Firefox or Chrome's developer tools, often by the F12 key) in your browser, you'll see:
+>>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
 
 ![استيراد نتيجة وحدة CSS في وحدة التحكم](css-modules-console.png)
 
 إذا قارنت ذلك بملف CSS الخاص بك ، فسترى أن كل فصل دراسي أصبح الآن مفتاحًا في الكائن المستورد يشير إلى سلسلة طويلة على سبيل المثال `avatar` تشير إلى صفحات src---- about-css-modules-module---avatar---2lRF7`. هذه هي أسماء الفئات التي تنشئها وحدات CSS. أنها مضمونة لتكون فريدة من نوعها عبر موقعك. ولأنه يتعين عليك استيرادها لاستخدام الفصول الدراسية ، فلا يوجد أي سؤال حول مكان استخدام بعض CSS.
 
+<<<<<<< HEAD
 4. قم بإنشاء مكون `User`.
 
 قم بإنشاء مكون جديد `<User />` مضمن في صفحة`about-css-modules.js`
 مكون. تعديل `about-css-modules.js` بحيث يبدو كما يلي:
+=======
+4. Create a new `<User />` component inline in the `about-css-modules.js` page
+   component. Modify `about-css-modules.js` so it looks like the following:
+>>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
 
 ```jsx:title=src/pages/about-css-modules.js
 import React from "react";

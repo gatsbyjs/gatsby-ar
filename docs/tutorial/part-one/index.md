@@ -20,7 +20,11 @@ gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world
 gatsby new [SITE_DIRECTORY_NAME] [URL_OF_STARTER_GITHUB_REPO]
 ```
 
+<<<<<<< HEAD
 إذا حذفت عنوان URL من النهاية، سيتم تلقائيا إنشاء موقع Gatsby لك بإستخدام [**عدة البدء الإفتراضية**](https://github.com/gatsbyjs/gatsby-starter-default). بالنسبة إلى هذا القسم من الدليل التطبيقي، سنستمر بموقع “Hello World” الذي قمت بإنشائه بالفعل في الدليل التطبيقي السابق.
+=======
+If you omit a URL from the end, Gatsby will automatically generate a site for you based on the [**default starter**](https://github.com/gatsbyjs/gatsby-starter-default). For this section of the tutorial, stick with the “Hello World” site you already created in tutorial part zero. You can learn more about [modifying starters](/docs/modifying-a-starter) in the docs.
+>>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
 
 ### ✋ افتح الشيفرة
 
@@ -165,7 +169,11 @@ export default () => (
 )
 ```
 
+<<<<<<< HEAD
 2. انتقل إلى http://localhost:8000/about/.
+=======
+2.  Navigate to `http://localhost:8000/about/`
+>>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
 
 ![صفحة عن الجديدة](05-about-page.png)
 
@@ -230,7 +238,11 @@ export default () => (
 
 ### ماذا تكون الخصائص “props”?
 
+<<<<<<< HEAD
 لقد قمت في وقت سابق بتعريف مكونات React على أنها أجزاء قابلة لإعادة الاستخدام من الشيفرة تصف واجهة المستخدم. لجعل هذه القطع القابلة لإعادة الاستخدام ديناميكية، يجب أن تكون قادرًا على تزويدها ببيانات مختلفة. يمكنك القيام بذلك مع إدخال يسمى الخصائص “props". الخصائص (appropriately enough) المقدمة لمكونات React.
+=======
+Earlier, you defined React components as reusable pieces of code describing a UI. To make these reusable pieces dynamic you need to be able to supply them with different data. You do that with input called "props". Props are (appropriately enough) properties supplied to React components.
+>>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
 
 في ملف `about.js` لقد مررت الخاصية `headerText` prop مع قيمة `"عن Gatsby"` إلى المكون الفرعي المستوردة `Header`:
 
@@ -324,20 +336,34 @@ export default () => (
 )
 ```
 
+<<<<<<< HEAD
 بعد أن تقوم بحفظ الملف، يجب أن ترى صفحة الاتصال وتكون قادرًا على الارتباط بينها وبين الصفحة الرئيسية.
 
 <video controls="controls" loop="true">
   <source type="video/mp4" src="./10-linking-between-pages.mp4"></source>
   <p>المعذرة! متصفحك لا يدعم هذا الفيديو.</p>
+=======
+After you save the file, you should see the contact page and be able to follow the link to the homepage.
+
+<video controls="controls" loop="true">
+  <source type="video/mp4" src="./10-linking-between-pages.mp4"></source>
+  <p>Sorry! Your browser doesn't support this video.</p>
+>>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
 </video>
 
 المكون `<Link />` في Gatsby يقوم بعملية الربط بين الصفحات في موقعك. لربط صفحات خارجية لربط الصفحات الخارجية الغير مبنية في موقع Gatsby خاصتك. إستخدم وسم HTML الإعتيادي `<a>`.
 
 ## نشر موقع Gatsby
 
+<<<<<<< HEAD
 يعتبر Gatsby.js _مولد مواقع ساكنة_، بمعنى أنه لا توجد خوادم لإعدادها او قواعد بيانات معقده لنشرها. بدلاً عن ذلك، فالامر `build` في Gatsby ينتج مجلد يحتوي على ملفات HTML و JavaScript ساكنة والتي يمكن نشرها في خدمات إستضافة المواقع الساكنة.
 
 جرب إستخدام [Surge](http://surge.sh/) لنشر موقعك الاول بإستخدام Gatsby. Surge يُعتبر واحد من العديد من "إستضافات المواقع الساكنة (static) " التي جعلت نشر مواقع Gatsby ممكنة.
+=======
+Gatsby.js is a _modern site generator_, which means there are no servers to set up or complicated databases to deploy. Instead, the Gatsby `build` command produces a directory of static HTML and JavaScript files which you can deploy to a static site hosting service.
+
+Try using [Surge](http://surge.sh/) for deploying your first Gatsby website. Surge is one of many "static site hosts" which makes it possible to deploy Gatsby sites.
+>>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
 
 إذا لم تكن قد قمت بتثبيت &amp; إعداد Surge، افتح نافذة طرفية جديدة وقم بتثبيت أداة سطر الأوامر الخاصة به:
 
@@ -368,7 +394,13 @@ ls public
 surge public/
 ```
 
+<<<<<<< HEAD
 بمجرد الانتهاء من تشغيل هذا، يجب أن تشاهد في جهاز الكمبيوتر الخاص بك شيء مثل:
+=======
+> Note that you will have to press the `enter` key after you see the `domain: some-name.surge.sh` information on your command-line interface.
+
+Once this finishes running, you should see in your terminal something like:
+>>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
 
 ![لقطة شاشة لنشر موقع Gatsby مع Surge](surge-deployment.png)
 
