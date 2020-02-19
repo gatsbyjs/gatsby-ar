@@ -1,5 +1,5 @@
 ---
-title: Using Fragments
+title: Using GraphQL Fragments
 ---
 
 Fragments allow you to reuse parts of GraphQL queries. It also allows you to split up complex queries into smaller, easier to understand components.
@@ -23,7 +23,7 @@ A fragment consists of three components:
 
 ## Creating and using a fragment
 
-A fragment can be created inside any GraphQL query, but it's good practice to create the query separately. More organization advice in the [Conceptual Guide](/docs/querying-with-graphql/#fragments).
+A fragment can be created inside any GraphQL query, but it's good practice to create the query separately. More organization advice in the [Conceptual Guide](/docs/graphql-concepts/#fragments).
 
 ```jsx:title=src/components/IndexPost.jsx
 import React from "react"
@@ -74,9 +74,9 @@ export const query = graphql`
 `
 ```
 
-When compiling your site, Gatsby preprocesses all GraphQL queries it finds. Therefore, any file that gets included in your project can define a snippet. However, only Pages can define GraphQL queries that actually return data. This is why we can define the fragment in the component file - it doesn't actually return any data directly.
+When compiling your site, Gatsby preprocesses all GraphQL queries it finds. Therefore, any file that gets included in your project can define a snippet. However, only Pages can define GraphQL queries that actually return data. This is why you can define the fragment in the component file - it doesn't actually return any data directly.
 
 ## Further reading
 
-- [Querying Data with GraphQL - Fragments](/docs/querying-with-graphql/#fragments)
+- [Querying Data with GraphQL - Fragments](/docs/graphql-concepts/#fragments)
 - [GraphQL Docs - Fragments](https://graphql.org/learn/queries/#fragments)
