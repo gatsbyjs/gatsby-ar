@@ -270,7 +270,7 @@ export default ({ children }) => (
 )
 ```
 
-![with-navigation2](with-navigation2.png)
+![with-navigation2](with-navigation.png)
 
 وهناك لديك! موقع من ثلاث صفحات مع تنقل شامل أساسي.
 
