@@ -28,11 +28,7 @@ disableTableOfContents: true
 
 تقوم ثيمات Gatsby باختصار جميع الإعدادت الافتراضية (الدَوَالّ المشتركة ، البحث عن مصادر البيانات ، التصميم) خارج موقعك وفي حزمة قابلة للتثبيت.
 
-<<<<<<< HEAD
 هذا يعني أن الإعدادت والدَوَالّ لم تتم كتابتهما مباشرةً في مشروعك ، ولكنهما تداران مركزيًا وتثبتهما كتبعية (dependency). يمكنك تحديث ثيمة بسلاسة ، وإنشاء الثيمات معًا ، وحتى تبديل ثيمة متوافقة لأخرى.
-=======
-This means that the configuration and functionality aren’t directly written into your project, but rather versioned, centrally managed, and installed as a dependency. You can seamlessly update a theme, compose themes together, and even swap out one compatible theme for another.
->>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
 
 تعلم اكثر حول استخدام وبناء الثيمات باستخدام [الدليل التطبيقي لثيمات Gatsby](/tutorial/theme-tutorials/).
 
