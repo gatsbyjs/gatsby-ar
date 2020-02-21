@@ -272,13 +272,7 @@ export default ({ children }) => (
 
 ![with-navigation2](with-navigation.png)
 
-<<<<<<< HEAD
 وهناك لديك! موقع من ثلاث صفحات مع تنقل شامل أساسي.
-=======
-And there you have it! A three page site with basic global navigation.
-
-_Challenge:_ With your new "layout component" powers, try adding headers, footers, global navigation, sidebars, etc. to your Gatsby sites!
->>>>>>> 90932a06db2e297cf416552b84e48b4b82e56fbc
 
 __تحدي: _بفضل قوى "مكون التخطيط" الجديدة ، حاول إضافة الرؤوس والتذييلات والتنقل الشامل والأشرطة الجانبية وما إلى ذلك إلى مواقع Gatsby الخاصة بك!
 
