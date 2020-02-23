@@ -1,34 +1,34 @@
 ---
-title: Gatsby.js Documentation
-description: The one stop location for tutorials, guides, and information about building with Gatsby
+title: مستندات Gatsby.js
 disableTableOfContents: true
+description: الموقع الشامل للدروس التعليمية والأدلة والمعلومات حول البناء باستخدام Gatsby
 ---
 
-Gatsby is a blazing fast modern site generator for React.
+Gatsby هو مولد مواقع حديثة و سريعة لـ React.
 
-## Get Started
+## ابدأ
 
-There are two main ways to get started with Gatsby:
+هناك طريقتان رئيسيتان لبدء استخدام Gatsby:
 
-1. [Tutorial](/tutorial/): Step-by-step instructions on how to install Gatsby and start a project: written for people without Gatsby or web development experience, though these learning resources have helped developers of all skill levels.
-2. [Quick start](/docs/quick-start): One page summary of how to install Gatsby and start a new project.
+1. [الدليل التطبيقي](/tutorial/): إرشادات خطوة بخطوة حول كيفية تثبيت Gatsby وبدء مشروع: مكتوبة للأشخاص الذين ليس لديهم خبرة مع Gatsby أو تطوير الويب عموما، بالرغم أن هذه الموارد التعليمية ساعدت المطورين من جميع المستويات.
+2. [بداية سريعة](/docs/quick-start): صفحة واحدة تلخص كيفية تثبيت Gatsby وبدء مشروع جديد.
 
-## Go further
+## اذهب اعمق
 
-1. [Recipes](/docs/recipes/): Find some quick answers for how to accomplish some specific, common tasks with Gatsby.
-2. Choose your own adventure and peruse the various sections of the Gatsby docs:
+1. [وصفات](/docs/recipes/): ابحث عن بعض الإجابات السريعة عن كيفية إنجاز بعض المهام المحددة والمشتركة مع Gatsby.
+2. اختر مغامرتك الخاصة واطلع على الأقسام المختلفة من مستندات Gatsby:
 
-   - [Reference Guides](/docs/guides/): Learn about the many different topics around building with Gatsby, like sourcing data, deployment, and more.
-   - [Gatsby API Reference](/docs/api-reference/): Learn more about Gatsby APIs and configuration.
-   - [Releases & Migration](/docs/releases-and-migration/): Find release notes and guides for migration between major versions.
-   - [Conceptual Guide](/docs/conceptual-guide/): Read high-level overviews of the Gatsby approach.
-   - [Gatsby Internals](/docs/gatsby-internals/): Dig into how Gatsby works behind the scenes.
-   - [Using Gatsby Professionally](/docs/using-gatsby-professionally/): Learn tips and tricks for how to explain Gatsby to others at work, so that you have more opportunities to work with Gatsby professionally.
+   - [مرجع الإرشادات](/docs/guides/): تعرّف على العديد من الموضوعات المختلفة حول الإنشاء باستخدام Gatsby ، مثل تحديد مصادر البيانات والنشر (deployment) والمزيد.
+   - [مرجع Gatsby API](/docs/api-reference/): تعرف على المزيد حول واجهات برمجة تطبيقات Gatsby والتهيئة.
+   - [الإصدارات والترحيل](/docs/releases-and-migration/): ابحث عن ملاحظات الإصدار و إرشادات الترحيل بين الإصدارات الرئيسية.
+   - [دليل المفاهيمي](/docs/conceptual-guide/): قراءة لمحات عامة رفيعة المستوى لمنهج Gatsby.
+   - [كواليس Gatsby](/docs/gatsby-internals/): اكتشف كيف يعمل Gatsby وراء الكواليس.
+   - [إستعمال Gatsby بشكل إحترافي](/docs/using-gatsby-professionally/): تعلم نصائح وحيل حول كيفية شرح Gatsby للآخرين في العمل ، بحيث يكون لديك المزيد من الفرص للعمل مع Gatsby بشكل احترافي.
 
-3. Check out the [Ecosystem](/ecosystem/) libraries for Gatsby starters and plugins, as well as external community resources.
+3. تحقق من مكتبات [النظام المتكامل](/ecosystem/) لبداية Gatsby والإضافات ، وكذلك موارد المجتمع الخارجية.
 
-## Start contributing
+## البدء في المساهمة
 
-Visit the [Contributing](/contributing/) section to find guides on the Gatsby community, code of conduct, and how to get started contributing to Gatsby.
+تفضل بزيارة [قسم المساهمة](/contributing/) للعثور على أدلة حول مجتمع Gatsby ومدونة قواعد السلوك وكيفية البدء في المساهمة في Gatsby.
 
-<EmailCaptureForm signupMessage="Want to keep up with the latest tips &amp; tricks? Subscribe to our newsletter!" />
+<EmailCaptureForm signupMessage="هل تريد متابعة أحدث النصائح والحيل؟ اشترك في نشرتنا الإخبارية!" />
