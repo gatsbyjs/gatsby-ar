@@ -1,31 +1,26 @@
 ---
-title: Data in Gatsby
+title: البيانات في Gatsby
 typora-copy-images-to: ./
 disableTableOfContents: true
 ---
 
-Welcome to Part Four of the tutorial! Halfway through! Hope things are starting
-to feel pretty comfortable 😀
+مرحبًا بك في الجزء الرابع من البرنامج التعليمي! خلال منتصف الطريق! نأمل أن الأمور بدأت تشعر بالراحة جدا😀
 
-## Recap of the first half of the tutorial
+## خلاصة النصف الأول من البرنامج التعليمي
 
-So far, you've been learning how to use React.js—how powerful it is to be able to
-create your _own_ components to act as custom building blocks for websites.
+حتى الآن، كنت تتعلم كيفية استخدام React.js - ما مدى قدرتك على إنشاء المكونات _الخاصة_ بك لتكون بمثابة عناصر بناء مخصصة لمواقع الويب.
 
-You’ve also explored styling components using CSS Modules.
+لقد استكشفت أيضًا مكونات التصميم باستخدام CSS Modules.
 
-## What's in this tutorial?
+## ماذا يوجد في هذا البرنامج التعليمي؟
 
-In the next four parts of the tutorial (including this one), you'll be diving into the Gatsby data layer, which is a powerful feature of Gatsby that lets you easily build sites from Markdown, WordPress, headless CMSs, and other data sources of all flavors.
+في الأجزاء الأربعة التالية من البرنامج التعليمي (بما في ذلك هذا الجزء)، ستغوص في طبقة بيانات Gatsby، وهي ميزة قوية في Gatsby والتي تتيح لك بسهولة إنشاء مواقع من Markdown و WordPress و CMS ومصادر بيانات أخرى جميع النكهات.
 
-**NOTE:** Gatsby’s data layer is powered by GraphQL. For an in-depth tutorial on
-GraphQL, we recommend [How to GraphQL](https://www.howtographql.com/).
+**ملاحظة:** طبقة بيانات Gatsby مدعومة بواسطة GraphQL. للحصول على برنامج تعليمي متعمق على GraphQL، نوصي [كيفية GraphQL](https://www.howtographql.com/).
 
-## Data in Gatsby
+## البيانات فى Gatsby
 
-A website has four parts: HTML, CSS, JS, and data. The first half of the
-tutorial focused on the first three. Now let’s learn how to use data in Gatsby
-sites.
+يحتوي موقع الويب على أربعة أجزاء: HTML و CSS و JS والبيانات. ركز النصف الأول من البرنامج التعليمي على الثلاثة الأولى. الآن دعونا نتعلم كيفية استخدام البيانات في مواقع Gatsby.
 
 **What is data?**
 
