@@ -105,7 +105,7 @@ import "./src/styles/global.css";
 // require('./src/styles/global.css')
 ```
 
-> ملاحظة: يعمل بناء جملة CommonJS (`requ`) و ES Module (`import`) هنا. إذا لم تكن متأكدًا من الخيار ، فسنستخدم "استيراد" معظم الوقت.
+> ملاحظة: يعمل بناء جملة CommonJS (`require`) و ES Module (`import`) هنا. إذا لم تكن متأكدًا من الخيار ، فسنستخدم `import` معظم الوقت. يتوجب عليك استخدام `require` عند العمل على ملفات تعمل فقط على بيئة عمل `Node.js` (مثل `gatsby-node.js`)
 
 3. ابدأ خادوم التطوير:
 
@@ -143,9 +143,9 @@ Gatsby يعمل خارج المألوف مع CSS Modules. ينصح بشدة هذ
 
 1. قم بإنشاء دليل جديد على `src/components` ثم ، في هذا الدليل الجديد ، قم بإنشاء ملف باسم`container.js` ولصق ما يلي:
 
-```javascript:title=src/components/container.js
-import React from "react";
-import containerStyles from "./container.module.css";
+```jsx:title=src/components/container.js
+import React from "react"
+import containerStyles from "./container.module.css"
 
 export default ({ children }) => (
   <div className={containerStyles.container}>{children}</div>
@@ -167,8 +167,8 @@ export default ({ children }) => (
 
 3. قم بإنشاء مكون صفحة جديد عن طريق إنشاء ملف في `src/pages/about-css-module.js`:
 
-```javascript:title=src/pages/about-css-modules.js
-import React from "react";
+```jsx:title=src/pages/about-css-modules.js
+import React from "react"
 
 import Container from "../components/container";
 
@@ -244,9 +244,7 @@ console.log(styles);
 
 إذا قارنت ذلك بملف CSS الخاص بك ، فسترى أن كل فصل دراسي أصبح الآن مفتاحًا في الكائن المستورد يشير إلى سلسلة طويلة على سبيل المثال `avatar` تشير إلى صفحات src---- about-css-modules-module---avatar---2lRF7`. هذه هي أسماء الفئات التي تنشئها وحدات CSS. أنها مضمونة لتكون فريدة من نوعها عبر موقعك. ولأنه يتعين عليك استيرادها لاستخدام الفصول الدراسية ، فلا يوجد أي سؤال حول مكان استخدام بعض CSS.
 
-4. قم بإنشاء مكون `User`.
-
-قم بإنشاء مكون جديد `<User />` مضمن في صفحة`about-css-modules.js`
+4. قم بإنشاء مكون جديد `<User />` مضمن في صفحة`about-css-modules.js`
 مكون. تعديل `about-css-modules.js` بحيث يبدو كما يلي:
 
 ```jsx:title=src/pages/about-css-modules.js

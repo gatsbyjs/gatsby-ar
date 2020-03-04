@@ -20,7 +20,7 @@ gatsby new hello-world https://github.com/gatsbyjs/gatsby-starter-hello-world
 gatsby new [SITE_DIRECTORY_NAME] [URL_OF_STARTER_GITHUB_REPO]
 ```
 
-إذا حذفت عنوان URL من النهاية، سيتم تلقائيا إنشاء موقع Gatsby لك بإستخدام [**عدة البدء الإفتراضية**](https://github.com/gatsbyjs/gatsby-starter-default). بالنسبة إلى هذا القسم من الدليل التطبيقي، سنستمر بموقع “Hello World” الذي قمت بإنشائه بالفعل في الدليل التطبيقي السابق.
+إذا حذفت عنوان URL من النهاية، سيتم تلقائيا إنشاء موقع Gatsby لك بإستخدام [**عدة البدء الإفتراضية**](https://github.com/gatsbyjs/gatsby-starter-default). بالنسبة إلى هذا القسم من الدليل التطبيقي، سنستمر بموقع “Hello World” الذي قمت بإنشائه بالفعل في الدليل التطبيقي السابق. من هنا يمكنك التعلم أكثر عن [تعديل عدة البدء الإفتراضية](/docs/modifying-a-starter)
 
 ### ✋ افتح الشيفرة
 
@@ -165,7 +165,7 @@ export default () => (
 )
 ```
 
-2. انتقل إلى http://localhost:8000/about/.
+2. انتقل إلى `http://localhost:8000/about/`
 
 ![صفحة عن الجديدة](05-about-page.png)
 
@@ -369,6 +369,8 @@ surge public/
 ```
 
 بمجرد الانتهاء من تشغيل هذا، يجب أن تشاهد في جهاز الكمبيوتر الخاص بك شيء مثل:
+
+> Note that you will have to press the `enter` key after you see the `domain: some-name.surge.sh` information on your command-line interface.
 
 ![لقطة شاشة لنشر موقع Gatsby مع Surge](surge-deployment.png)
 

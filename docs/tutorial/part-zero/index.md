@@ -12,44 +12,84 @@ disableTableOfContents: true
 
 نتوقف لحظة لتحديد مكان وفتح واجهة سطر الأوامر (CLI) في جهاز الحاسب الخاص بك. اعتمادًا على نظام التشغيل الذي تستخدمه ، راجع [**إرشادات لنظام التشغيل Mac**](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/) أو [**تعليمات لنظام التشغيل Windows**](https://www.quora.com/How-do-I-open-terminal-in-windows) أو [**تعليمات لنظام التشغيل Linux**](https://www.howtogeek.com/140679/beginner-geek-how-to-start-using-the-linux-terminal/).
 
-## تثبيت Homebrew لـ Node.js
+_Note: If you’re new to the command line, "running" a command, means "writing a given set of instructions in your command prompt, and hitting the Enter key". Commands will be shown in a highlighted box, something like `node --version`, but not every highlighted box is a command! If something is a command it will be mentioned as something you have to run/execute._
+
+## Install Node.js for your appropriate operating system
+
+Node.js is an environment that can run JavaScript code outside of a web browser. Gatsby is built with Node.js. To get up and running with Gatsby, you’ll need to have a recent version installed on your computer. npm comes bundled with Node.js so if you don't have npm, chances are that you don't have Node.js either.
+
+### تعليمات مستخدمو Mac
 
 لتثبيت Gatsby و Node.js ، يوصى باستخدام [Homebrew](https://brew.sh/). مجموعة تنصيبات صغيرة في البداية يمكن أن تجنبك بعض الصداع في وقت لاحق!
 
-كيفية تثبت أو تتحقق من Homebrew على جهازك:
+#### كيفية تثبت أو تتحقق من Homebrew على جهازك:
 
 1. قم بفتح "الطرفية Terminal".
-1. تاكد ما إذا تم تثبيت Homebrew عن طريق تنفيذ `brew -v`. يجب أن تشاهد "Homebrew" ورقم الإصدار.
-1. اذا لم يظهر لك, حمل ونصب [Homebrew باتباع التعليمات](https://docs.brew.sh/Installation) لنظام التشغيل الخاص بك (Mac أو Linux أو Windows).
-1. بمجرد تثبيت Homebrew ، كرر الخطوة رقم 2 للتحقق.
+2. تاكد ما إذا تم تثبيت Homebrew عن طريق تنفيذ `brew -v`. يجب أن تشاهد "Homebrew" ورقم الإصدار.
+3. اذا لم يظهر لك، حمل ونصب [Homebrew باتباع التعليمات](https://docs.brew.sh/Installation).
+4. بمجرد تثبيت Homebrew ، كرر الخطوة رقم 2 للتحقق.
 
-### مستخدمو Mac: قم بتثبيت أدوات سطر أوامر Xcode
-
-1. قم بفتح "الطرفية Terminal".
-1. على نظام Mac ، قم بتثبيت أدوات سطر أوامر Xcode عن طريق تشغيل `xcode-select --install`.
-   1. إذا فشل ذلك ، قم بتنزيله [مباشرةً من موقع Apple](https://developer.apple.com/download/more/) ، بعد تسجيل الدخول باستخدام حساب مطور Apple
-1. بعد مطالبتك ببدء التثبيت ، ستتم مطالبتك مرة أخرى بقبول ترخيص برنامج للأدوات المراد تنزيلها.
-
-## ⌚ تثبيت Node.js و npm
-
-Node.js عبارة عن بئية لتشغيل شيفرة JavaScript خارج المتصفح. Gatsby مبنية بإستخدام Node.js. لتشغيل Gatsby, ستحتاج إلى تثبيت إصدار حديث على جهاز الحاسب الخاص بك.
-_ملاحظة: الاصدار الادنى المتوافق مع Gatsby هو الاصدار 8, وبالامكان إستخدام أصدارات أحدث_
+#### قم بتثبيت أدوات سطر أوامر Xcode:
 
 1. قم بفتح "الطرفية Terminal".
-1. نفذ `brew update` للتأكد من أن لديك أحدث إصدار من Homebrew.
-1. قم بتنفيذ هذا الأمر لتثبيت Node و npm دفعة واحدة: `brew install node`
+2. قم بتثبيت أدوات سطر أوامر Xcode عن طريق تشغيل `xcode-select --install`.
+   - إذا فشل ذلك، قم بتنزيله [مباشرةً من موقع Apple](https://developer.apple.com/download/more/) بعد تسجيل الدخول باستخدام حساب مطور Apple
+3. بعد مطالبتك ببدء التثبيت ، ستتم مطالبتك مرة أخرى بقبول ترخيص برنامج للأدوات المراد تنزيلها.
 
-بمجرد اتباع خطوات التثبيت ، تأكد من تثبيت كل شيء بشكل صحيح:
+#### Install Node
 
-### تحقق من تثبيت Node.js الخاص بك
+1. Open your Terminal
+2. Run `brew install node`
+   - If you don't want to install it through Homebrew, download the latest Node.js version from [the official Node.js website](https://nodejs.org/en/), double click on the downloaded file and go through the installation process.
 
-1. قم بفتح "الطرفية Terminal".
-2. نفذ `node --version`. (اذا كنت مبتدى مع سطر الاوامر, “نفذ `الامر`” يقصد بها “إكتب `node --version` في موجه الأوامر "الطرفية Terminal", واضغط على مفتاح Enter”. من هنا ، هذا ما نعنيه “بنفذ `الامر`”).
-3. نفذ `npm --version`.
+### Windows Instructions
 
-مخرجات الاوامر السابقة يجيب انت تكون رقم الاصدار. قد لا تتماثل اصداراتك مع الاصدارات الظاهرة بالاسفل! واذا كان تنفيذ الاوامر السابقة لا يعرض لك رقم اصدار, عد وتاكد من من تثبيت Node.js.
+- Download and install the latest Node.js version from [the official Node.js website](https://nodejs.org/en/)
 
-![تحقق إصدارات العقدة و npm في "الطرفية Terminal"](01-node-npm-versions.png)
+### Linux Instructions
+
+Install nvm (Node Version Manager) and needed dependencies. nvm is used to manage Node.js and all its associated versions.
+
+_💡 If when installing a package, it asks for confirmation, type `y` and press enter._
+
+#### Ubuntu, Debian, and other `apt` based distros:
+
+1. Run `sudo apt update` and then `sudo apt -y upgrade` to make sure your Linux distribution is ready to go.
+2. Run `sudo apt-get install curl` to install curl which allows you to transfer data and download additional dependencies.
+3. After it finishes installing, run `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash` to download the latest nvm version.
+4. To confirm this has worked, use the following command. `nvm --version`. The output should be a version number.
+5. [Set default Node.js version](#set-default-nodejs-version)
+
+#### Arch, Manjaro and other `pacman` based distros:
+
+1. Run `sudo pacman -Sy` to make sure your distribution is ready to go.
+2. These distros come installed with curl, so you can use that to download nvm.
+   `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash`
+3. Before using nvm, you need to install additional dependencies by running `sudo pacman -S grep awk tar`.
+4. To confirm this has worked, use the following command. `nvm --version`. The output should be a version number.
+5. [Set default Node.js version](#set-default-nodejs-version)
+
+#### Fedora, RedHat, and other `dnf` based distros:
+
+1. These distros come installed with curl, so you can use that to download nvm.
+   `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash`
+2. To confirm this has worked, use the following command. `nvm --version`. The output should be a version number.
+3. [Set default Node.js version](#set-default-nodejs-version)
+
+If the Linux distribution you are using is not listed here, please find instructions on the web.
+
+#### Set default Node.js version
+
+When nvm is installed, it does not default to a particular node version. You’ll need to install the version you want and give nvm instructions to use it. This example uses the latest release of version 10, but more recent version numbers can be used instead.
+
+```shell
+nvm install 10
+nvm use 10
+```
+
+To confirm that this worked, you can run `npm --version` and `node --version`. The output should look similar to the screenshot below, showing version numbers in response to the commands.
+
+Once you have followed the installation steps and you have checked everything is installed properly, you can continue to the next step.
 
 ## تثبيت Git
 
@@ -113,15 +153,15 @@ gatsby develop
 
 ### عرض موقعك محليا
 
-افتح علامة تبويب جديدة في متصفحك وانتقل إلى الرابط [**http://localhost:8000**](http://localhost:8000/).
+افتح علامة تبويب جديدة في متصفحك وانتقل إلى الرابط `http://localhost:8000/`
 
 ![تحقق من الصفحة الرئيسية](04-home-page.png)
 
 مبروك! هذه هي بداية موقعك Gatsby الأول! 🎉
 
-ستتمكن من زيارة الموقع محليًا على [**_http://localhost:8000_**](http://localhost:8000/) طالما أن خادم التطوير الخاص بك يعمل. هذه هي العملية التي بدأت بتنفيذ الامر `gatsby develop`. لوقف تشغيل هذه العملية (أو “للتوقف عن تشغيل خادم التطوير”), العودة إلى النافذة الطرفية الخاصة بك ، اضغط باستمرار على مفتاح “التحكم”, ثم إضغط على “c” (ctrl-c). لبدء ذلك مرة أخرى, نفذ `gatsby develop` مرة أخرى!
+ستتمكن من زيارة الموقع محليًا على `http://localhost:8000/` طالما أن خادم التطوير الخاص بك يعمل. هذه هي العملية التي بدأت بتنفيذ الامر `gatsby develop`. لوقف تشغيل هذه العملية (أو “للتوقف عن تشغيل خادم التطوير”), العودة إلى النافذة الطرفية الخاصة بك ، اضغط باستمرار على مفتاح “التحكم”, ثم إضغط على “c” (ctrl-c). لبدء ذلك مرة أخرى, نفذ `gatsby develop` مرة أخرى!
 
-**ملاحظة:** إذا كنت تستخدم إعداد VM مثل `vagrant` و / أو ترغب في الاستماع على عنوان IP المحلي الخاص بك, نفذ `gatsby develop -- --host=0.0.0.0`. الآن، يستمع خادم التطوير على كل من localhost و IP المحلي الخاص بك.
+**ملاحظة:** إذا كنت تستخدم إعداد VM مثل `vagrant` و / أو ترغب في الاستماع على عنوان IP المحلي الخاص بك, نفذ `gatsby develop -- --host=0.0.0.0`. الآن، يستمع خادم التطوير على كل من `http://localhost` و IP المحلي الخاص بك.
 
 ## إعداد محرر الشيفرة البرمجية
 
